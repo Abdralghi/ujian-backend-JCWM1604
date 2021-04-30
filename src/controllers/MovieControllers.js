@@ -1,5 +1,4 @@
 const { mysqldb } = require("./../connection");
-const { createAccessToken } = require("./../helpers/CreateToken");
 const { promisify } = require("util");
 const dba = promisify(mysqldb.query).bind(mysqldb);
 
